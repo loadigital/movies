@@ -20,25 +20,9 @@ boton.addEventListener('click', ()=>{
     const resumen = document.getElementById('resumen').value;
     const linkImg = document.getElementById('linkImg').value;
     const link_0= document.getElementById('link_0').value;
-    const link_1= document.getElementById('link_1').value;
-    const link_2= document.getElementById('link_2').value;
-    const link_3= document.getElementById('link_3').value;
-    const link_4= document.getElementById('link_4').value;
-    const link_5= document.getElementById('link_5').value;
-    const link_6= document.getElementById('link_6').value;
-    const link_7= document.getElementById('link_7').value;
-    const link_8= document.getElementById('link_8').value;
-    const link_9= document.getElementById('link_9').value;
+    
     const text_0 = document.getElementById('text_0').value;
-    const text_1 = document.getElementById('text_1').value;
-    const text_2 = document.getElementById('text_2').value;
-    const text_3 = document.getElementById('text_3').value;
-    const text_4 = document.getElementById('text_4').value;
-    const text_5 = document.getElementById('text_5').value;
-    const text_6 = document.getElementById('text_6').value;
-    const text_7 = document.getElementById('text_7').value;
-    const text_8 = document.getElementById('text_8').value;
-    const text_9 = document.getElementById('text_9').value;
+    
     const linkDescarga = document.getElementById('linkDescarga').value;
     const linkAtras = document.getElementById('linkAtras').value;
     const linkReproducir = document.getElementById('linkReproducir').value;
@@ -54,28 +38,12 @@ boton.addEventListener('click', ()=>{
 		resumen: resumen,
 		linkImg: linkImg,
 		linkSeries:[
-            link_0,
-            link_1,
-            link_2,
-            link_3,
-            link_4,
-            link_5,
-            link_6,
-            link_7,
-            link_8,
-            link_9
+            link_0
+            
 			],
 		textCapitulo:[
-			text_0,
-            text_1,
-            text_2,
-            text_3,
-            text_4,
-            text_5,
-            text_6,
-            text_7,
-            text_8,
-            text_9
+			text_0
+            
 		],
 		linkDescarga: linkDescarga,
 		linkAtras: linkAtras,
@@ -93,25 +61,9 @@ boton.addEventListener('click', ()=>{
         document.getElementById('resumen').value = "";
         document.getElementById('linkImg').value = "";
         document.getElementById('link_0').value = "";
-        document.getElementById('link_1').value = "";
-        document.getElementById('link_2').value = "";
-        document.getElementById('link_3').value = "";
-        document.getElementById('link_4').value = "";
-        document.getElementById('link_5').value = "";
-        document.getElementById('link_6').value = "";
-        document.getElementById('link_7').value = "";
-        document.getElementById('link_8').value = "";
-        document.getElementById('link_9').value = "";
+        
         document.getElementById('text_0').value = "";
-        document.getElementById('text_1').value = "";
-        document.getElementById('text_2').value = "";
-        document.getElementById('text_3').value = "";
-        document.getElementById('text_4').value = "";
-        document.getElementById('text_5').value = "";
-        document.getElementById('text_6').value = "";
-        document.getElementById('text_7').value = "";
-        document.getElementById('text_8').value = "";
-        document.getElementById('text_9').value = "";
+        
         document.getElementById('linkDescarga').value = "";
         document.getElementById('linkAtras').value = "";
         document.getElementById('linkReproducir').value = "";
@@ -139,25 +91,9 @@ db.collection("users").onSnapshot((querySnapshot) => {
                 <td style="display:none">${doc.data().resumen}</td>
                 <td style="display:none">${doc.data().linkImg}</td>
                 <td style="display:none">${doc.data().linkSeries[0]}</td>
-                <td style="display:none">${doc.data().linkSeries[1]}</td>
-                <td style="display:none">${doc.data().linkSeries[2]}</td>
-                <td style="display:none">${doc.data().linkSeries[3]}</td>
-                <td style="display:none">${doc.data().linkSeries[4]}</td>
-                <td style="display:none">${doc.data().linkSeries[5]}</td>
-                <td style="display:none">${doc.data().linkSeries[6]}</td>
-                <td style="display:none">${doc.data().linkSeries[7]}</td>
-                <td style="display:none">${doc.data().linkSeries[8]}</td>
-                <td style="display:none">${doc.data().linkSeries[9]}</td>
+                
                 <td style="display:none">${doc.data().textCapitulo[0]}</td>
-                <td style="display:none">${doc.data().textCapitulo[1]}</td>
-                <td style="display:none">${doc.data().textCapitulo[2]}</td>
-                <td style="display:none">${doc.data().textCapitulo[3]}</td>
-                <td style="display:none">${doc.data().textCapitulo[4]}</td>
-                <td style="display:none">${doc.data().textCapitulo[5]}</td>
-                <td style="display:none">${doc.data().textCapitulo[6]}</td>
-                <td style="display:none">${doc.data().textCapitulo[7]}</td>
-                <td style="display:none">${doc.data().textCapitulo[8]}</td>
-                <td style="display:none">${doc.data().textCapitulo[9]}</td>
+                
                 <td style="display:none">${doc.data().linkDescarga}</td>
                 <td style="display:none">${doc.data().linkAtras}</td>
                 <td style="display:none">${doc.data().linkReproducir}</td>
@@ -175,25 +111,9 @@ db.collection("users").onSnapshot((querySnapshot) => {
                     '${doc.data().resumen}',
                     '${doc.data().linkImg}',
                     '${doc.data().linkSeries[0]}',
-                    '${doc.data().linkSeries[1]}',
-                    '${doc.data().linkSeries[2]}',
-                    '${doc.data().linkSeries[3]}',
-                    '${doc.data().linkSeries[4]}',
-                    '${doc.data().linkSeries[5]}',
-                    '${doc.data().linkSeries[6]}',
-                    '${doc.data().linkSeries[7]}',
-                    '${doc.data().linkSeries[8]}',
-                    '${doc.data().linkSeries[9]}',
+                    
                     '${doc.data().textCapitulo[0]}',
-                    '${doc.data().textCapitulo[1]}',
-                    '${doc.data().textCapitulo[2]}',
-                    '${doc.data().textCapitulo[3]}',
-                    '${doc.data().textCapitulo[4]}',
-                    '${doc.data().textCapitulo[5]}',
-                    '${doc.data().textCapitulo[6]}',
-                    '${doc.data().textCapitulo[7]}',
-                    '${doc.data().textCapitulo[8]}',
-                    '${doc.data().textCapitulo[9]}',
+                    
                     '${doc.data().linkDescarga}',
                     '${doc.data().linkAtras}',
                     '${doc.data().linkReproducir}'
@@ -212,9 +132,8 @@ function eliminar(codigo){
 };
 
 //atualizar datos
-function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,linkImg,link_0,link_1,
-    link_2,link_3,link_4,link_5,link_6,link_7,link_8,link_9,text_0,text_1,text_2,text_3,text_4,
-    text_5,text_6,text_7,text_8,text_9,linkDescarga,linkAtras,linkReproducir){
+function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,linkImg,link_0,
+    text_0,linkDescarga,linkAtras,linkReproducir){
         document.getElementById('id').value = id;
         document.getElementById('title').value = title;
         document.getElementById('genero').value = genero;
@@ -225,25 +144,9 @@ function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,l
         document.getElementById('resumen').value = resumen;
         document.getElementById('linkImg').value = linkImg;
         document.getElementById('link_0').value = link_0;
-        document.getElementById('link_1').value = link_1;
-        document.getElementById('link_2').value = link_2;
-        document.getElementById('link_3').value = link_3;
-        document.getElementById('link_4').value = link_4;
-        document.getElementById('link_5').value = link_5;
-        document.getElementById('link_6').value = link_6;
-        document.getElementById('link_7').value = link_7;
-        document.getElementById('link_8').value = link_8;
-        document.getElementById('link_9').value = link_9;
+        
         document.getElementById('text_0').value = text_0;
-        document.getElementById('text_1').value = text_1;
-        document.getElementById('text_2').value = text_2;
-        document.getElementById('text_3').value = text_3;
-        document.getElementById('text_4').value = text_4;
-        document.getElementById('text_5').value = text_5;
-        document.getElementById('text_6').value = text_6;
-        document.getElementById('text_7').value = text_7;
-        document.getElementById('text_8').value = text_8;
-        document.getElementById('text_9').value = text_9;
+        
         document.getElementById('linkDescarga').value = linkDescarga;
         document.getElementById('linkAtras').value = linkAtras;
         document.getElementById('linkReproducir').value = linkReproducir;
@@ -262,25 +165,9 @@ function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,l
                 var resumen = document.getElementById('resumen').value;
                 var linkImg = document.getElementById('linkImg').value;
                 var link_0= document.getElementById('link_0').value;
-                var link_1= document.getElementById('link_1').value;
-                var link_2= document.getElementById('link_2').value;
-                var link_3= document.getElementById('link_3').value;
-                var link_4= document.getElementById('link_4').value;
-                var link_5= document.getElementById('link_5').value;
-                var link_6= document.getElementById('link_6').value;
-                var link_7= document.getElementById('link_7').value;
-                var link_8= document.getElementById('link_8').value;
-                var link_9= document.getElementById('link_9').value;
+                
                 var text_0 = document.getElementById('text_0').value;
-                var text_1 = document.getElementById('text_1').value;
-                var text_2 = document.getElementById('text_2').value;
-                var text_3 = document.getElementById('text_3').value;
-                var text_4 = document.getElementById('text_4').value;
-                var text_5 = document.getElementById('text_5').value;
-                var text_6 = document.getElementById('text_6').value;
-                var text_7 = document.getElementById('text_7').value;
-                var text_8 = document.getElementById('text_8').value;
-                var text_9 = document.getElementById('text_9').value;
+                
                 var linkDescarga = document.getElementById('linkDescarga').value;
                 var linkAtras = document.getElementById('linkAtras').value;
                 var linkReproducir = document.getElementById('linkReproducir').value;
@@ -297,28 +184,12 @@ function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,l
 		resumen: resumen,
 		linkImg: linkImg,
 		linkSeries:[
-            link_0,
-            link_1,
-            link_2,
-            link_3,
-            link_4,
-            link_5,
-            link_6,
-            link_7,
-            link_8,
-            link_9
+            link_0
+            
 			],
 		textCapitulo:[
-			text_0,
-            text_1,
-            text_2,
-            text_3,
-            text_4,
-            text_5,
-            text_6,
-            text_7,
-            text_8,
-            text_9
+			text_0
+            
 		],
 		linkDescarga: linkDescarga,
 		linkAtras: linkAtras,
@@ -336,25 +207,9 @@ function editar(codigo,id,title,genero,categoria,tipo,puntuacion,fecha,resumen,l
         document.getElementById('resumen').value = "";
         document.getElementById('linkImg').value = "";
         document.getElementById('link_0').value = "";
-        document.getElementById('link_1').value = "";
-        document.getElementById('link_2').value = "";
-        document.getElementById('link_3').value = "";
-        document.getElementById('link_4').value = "";
-        document.getElementById('link_5').value = "";
-        document.getElementById('link_6').value = "";
-        document.getElementById('link_7').value = "";
-        document.getElementById('link_8').value = "";
-        document.getElementById('link_9').value = "";
+       
         document.getElementById('text_0').value = "";
-        document.getElementById('text_1').value = "";
-        document.getElementById('text_2').value = "";
-        document.getElementById('text_3').value = "";
-        document.getElementById('text_4').value = "";
-        document.getElementById('text_5').value = "";
-        document.getElementById('text_6').value = "";
-        document.getElementById('text_7').value = "";
-        document.getElementById('text_8').value = "";
-        document.getElementById('text_9').value = "";
+        
         document.getElementById('linkDescarga').value = "";
         document.getElementById('linkAtras').value = "";
         document.getElementById('linkReproducir').value = "";
